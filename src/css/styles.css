@@ -13,25 +13,96 @@
 /* Sections style */
 @import url('./header.css');
 @import url('./vite-promo.css');
-@import url('./badges.css');
+
 @import url('./back-link.css');
-@import url('./footer.css');
+
+
+
 
 
 .gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
   list-style: none;
-  padding: 0;
-}
-
-.gallery-item {
-  flex-basis: calc(33.333% - 10px);
+  padding: auto;
 }
 
 .gallery-image {
   display: block;
-  width: 100%;
-  height: auto;
+  width: 360px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.sl-wrapper {
+  background: rgba(46, 47, 66, 0.8);
+}
+
+/* Form */
+
+.feedback-form {
+  margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-radius: 8px;
+    padding: 24px;
+    max-width: 408px;
+    background: #ffffff;
+}
+
+.form-label {
+display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+}
+
+.form-input {
+  border: 1px solid #808080;
+    border-radius: 4px;
+    width: 360px;
+    height: 40px;
+}
+
+.form-input:hover {
+  border: 1px solid #000;
+}
+
+.form-input:active {
+  border: 1px solid #808080;
+}
+
+.text {
+  border: 1px solid #808080;
+    border-radius: 4px;
+    width: 360px;
+    height: 80px;
+}
+
+.form-btn {
+  border-radius: 8px;
+    padding: 8px 16px;
+    width: 95px;
+    height: 40px;
+    background: #4e75ff;
+    border: none;
+    font-weight: 500;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0.04em;
+      color: #fff;
+}
+
+.form-btn:hover {
+  background: #6c8cff;
 }
